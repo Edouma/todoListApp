@@ -31,3 +31,10 @@
 .navbar a:hover {
   color: blueviolet;
 }
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: left;
+}
