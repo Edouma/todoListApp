@@ -38,14 +38,14 @@ const TodoForm =({todo, setTodo, todoList, setTodoList})=>{
             ))} */}
     <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Description:</Form.Label>
-        <Form.Control value={todo} type="text" placeholder="Add Description" onChange={handleChange}/>
+        <Form.Label>Add Item:</Form.Label>
+        <Form.Control value={todo} type="text" placeholder="Add Item..." onChange={handleChange}/>
       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicPassword">
+      {/* <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Add Todo Item:</Form.Label>
         <Form.Control as="textarea" placeholder="Add Todo Item..." rows={3}/>
-      </Form.Group>
+      </Form.Group> */}
       <Button variant="primary" type="submit">
         add Item
       </Button>

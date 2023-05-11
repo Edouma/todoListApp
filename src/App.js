@@ -4,7 +4,9 @@ import Navbar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TodoForm from './components/TodoForm';
 import {useState} from 'react';
-import Todo from './components/Todo';
+import MyTodoList from './components/MyTodoList';
+
+
 function App() {
 
   const [todo, setTodo]= useState("");
@@ -23,7 +25,7 @@ function App() {
           todoList={todoList} 
           setTodoList={setTodoList}
         />
-          <Todo/>
+        <MyTodoList todoList={todoList}/>
         </div>
       
       

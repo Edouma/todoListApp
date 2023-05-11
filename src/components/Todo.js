@@ -1,9 +1,9 @@
 import { Button } from 'react-bootstrap';
-const Todo =()=>{
+const Todo =({item})=>{
     return(
         <div>
-            <div>
-                <h3> Todo Item...</h3>
+            <div className='todoItem'>
+                <h4> {item}</h4>
                 <Button variant="danger" type="submit"> done </Button>
             </div>
 
