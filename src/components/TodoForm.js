@@ -1,6 +1,7 @@
 // import { useState } from "react";
 import { Button } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
+import shortid from 'shortid';
 
 const TodoForm =({todo, setTodo, todoList, setTodoList})=>{
 
@@ -9,13 +10,13 @@ const TodoForm =({todo, setTodo, todoList, setTodoList})=>{
 
     const handleChange =(event)=>{
         setTodo(event.target.value);
-        console.log(todo);
     }
 
     const handleSubmit =(event)=>{
       event.preventDefault();
-      setTodoList([...todoList, todo]);
+      setTodoList([...todoList, {name:todo, id:shortid.generate()}]);
       console.log(todoList);
+      setTodo("");
     }
 
     // const handleSubmit=(event)=>{
